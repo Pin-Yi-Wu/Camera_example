@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:weightSum="4"
+    android:background="@color/background_material_dark">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:id="@+id/imageView"
+        android:scaleType="centerInside"
+        android:layout_weight="3" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="0.5"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/bright_foreground_disabled_material_light"
+            android:onClick="onGet"
+            android:text="PICTURE"
+            android:textColor="@color/accent_material_dark"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/bright_foreground_disabled_material_light"
+            android:onClick="onPick"
+            android:text="ALBUN"
+            android:textColor="@color/accent_material_dark"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="0.5"
+        android:weightSum="2">
+        <Button
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:text="SHARE"
+            android:id="@+id/button3"
+            android:onClick="onShare"
+            android:layout_weight="1"
+            android:background="@color/bright_foreground_disabled_material_light"
+            android:textColor="@color/accent_material_dark"
+            android:textSize="18sp"/>
+        <ImageButton
+            android:layout_height="wrap_content"
+            android:id="@+id/button4"
+            android:layout_weight="1"
+            android:layout_width="0px"
+            android:src="@drawable/flickr"
+            android:background="@drawable/abc_btn_borderless_material" />
+    </LinearLayout>
+
+</LinearLayout>
